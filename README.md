@@ -22,19 +22,19 @@ The data for this project is sourced from the Wikimedia API, which provides acce
 
 ### Outputs:
 
-- **academy_monthly_mobile_{start_date}-{end_date}.json**: This JSON file contains monthly pageviews data for articles accessed via mobile devices which is the sum of mobile web and mobile app.
+- **academy_monthly_mobile_201507-202309.json**: This JSON file contains monthly pageviews data for articles accessed via mobile devices which is the sum of mobile web and mobile app.
    - **Fields:**
      - `name`: The name of the Wikipedia article.
      - `timestamp`: The timestamp representing the month and year of the data (e.g., "202301" for January 2023).
      - `views`: The number of pageviews for the article during that specific month.
 
-- **academy_monthly_desktop_{start_date}-{end_date}.json**: This JSON file contains monthly pageviews data for articles accessed via desktop.
+- **academy_monthly_desktop_201507-202309.json**: This JSON file contains monthly pageviews data for articles accessed via desktop.
    - **Fields:**
      - `name`: The name of the Wikipedia article.
      - `timestamp`: The timestamp representing the month and year of the data (e.g., "202301" for January 2023).
      - `views`: The number of pageviews for the article during that specific month.
 
-- **academy_monthly_cumulative_{start_date}-{end_date}.json**: This JSON file contains monthly cumulative pageviews data for Wikipedia articles, which is the sum of mobile and desktop views.
+- **academy_monthly_cumulative_201507-202309.json**: This JSON file contains monthly cumulative pageviews data for Wikipedia articles, which is the sum of mobile and desktop views.
    - **Fields:**
      - `name`: The name of the Wikipedia article.
      - `timestamp`: The timestamp representing the month and year of the data (e.g., "202301" for January 2023).
@@ -51,4 +51,3 @@ The data for this project is sourced from the Wikimedia API, which provides acce
 1. The Date range to pull the data has to specified in `ARTICLE_PAGEVIEWS_PARAMS_TEMPLATE`. This is not dynamic.
 2. The data collection process might be slighty time consuming as we will be calling the API for more than 1000 times.
 3. Rate Limiting and Throttling has to be kept in mind to avoid being temporarily blocked.
-4. 
