@@ -30,9 +30,10 @@ The data for this project is sourced from the Wikimedia API, which provides acce
 
 - **academy_monthly_desktop_201507-202309.json**: This JSON file contains monthly pageviews data for articles accessed via desktop.
    - **Fields:**
-     - `name`: The name of the Wikipedia article.
+     - `article name`: The name of the Wikipedia article.
      - `timestamp`: The timestamp representing the month and year of the data (e.g., "202301" for January 2023).
      - `views`: The number of pageviews for the article during that specific month.
+     - We get other fileds like `project` (source), `granularity` (monthly, yearly, etc.), `access` (desktop, mobile, etc.) & `agent` (user, etc.).
 
 - **academy_monthly_cumulative_201507-202309.json**: This JSON file contains monthly cumulative pageviews data for Wikipedia articles, which is the sum of mobile and desktop views.
    - **Fields:**
